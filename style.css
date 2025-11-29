@@ -1,0 +1,73 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4,h5 { font-weight: 600; }
+
+#mainNav {
+    background: rgba(0,0,0,0.8);
+    transition: background 0.3s;
+}
+
+#mainNav .navbar-brand { font-size: 1.5rem; font-weight: bold; }
+#mainNav .nav-link { color: #fff !important; font-weight: 500; transition: 0.3s; }
+#mainNav .nav-link:hover { color: #f5c16c !important; }
+.scrolled { background: #000 !important; }
+
+.hero {
+    background: 
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url('imgs/banner.png') center / cover no-repeat;
+
+    height: 100vh;
+    width: 100%;
+
+    color: #fff;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.hero h1 { font-size: 3rem; margin-bottom: 20px; }
+.hero p { font-size: 1.25rem; margin-bottom: 30px; }
+
+.menu-card { border-radius: 12px; overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+.menu-card img { height: 260px; object-fit: cover; }
+.menu-card:hover { transform: translateY(-8px); box-shadow: 0 15px 25px rgba(0,0,0,0.2); }
+
+.img-circulo {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.4s;
+}
+.img-circulo:hover { transform: scale(1.03); }
+
+.card { border-radius: 14px; }
+.card input:focus { border-color: #b87b28; box-shadow: 0 0 6px rgba(184,123,40,0.4); }
+.btn-primary { background-color: #b87b28; border-color: #b87b28; transition: 0.3s; }
+.btn-primary:hover { background-color: #8d5f1f; border-color: #8d5f1f; }
+
+#footer { background: #111; padding: 25px 0; }
+#footer a { text-decoration: none; transition: 0.3s; }
+#footer a:hover { color: #f5c16c !important; }
+
+html { scroll-behavior: smooth; }
+
+@media (max-width: 768px) {
+    #mainNav .navbar-brand { font-size: 1.3rem; }
+    .menu-card img { height: 210px; }
+    #sobre .container { text-align: center; }
+    .img-circulo { width: 280px; height: 280px; margin-bottom: 20px; }
+}
